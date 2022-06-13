@@ -2,7 +2,7 @@
 // Professor   : Ricardo 
 // Descrição   : Ativ 1
 // Autor(a)    : Gustavo
-// Data atual  : 12/06/2022
+// Data atual  : 07/06/2022
 Var
 // Seção de Declarações das variáveis 
 num1, num2, num3, soma, sub, mult, divisao : real
@@ -27,6 +27,7 @@ escreval ("A divisao deu ", divisao)
 
 Fimalgoritmo
 
+/////////////////////////////////////////////
 atividade 2
 Autor(a)    : Gustavo
 // Data atual  : 12/06/2022
@@ -57,7 +58,7 @@ mp <- (n1*p1+n2*p2+n3*p3+n4*p4)/(p1+p2+p3+p4)
 escreval ("A média ponderada é de : ",mp)
 
 Fimalgoritmo
-
+/////////////////////////////////////////
 
 ativ 4
 
@@ -87,7 +88,7 @@ Inicio
       fimse
    fimse
 Fimalgoritmo
-
+////////////////////////////////////////////
 
 Ativ 5
 
@@ -177,7 +178,7 @@ Inicio
 
 Fimalgoritmo
 
-
+///////////////////////////////////////////
 
 
 Ativ 7
@@ -219,12 +220,10 @@ Inicio
 
 Fimalgoritmo
 
-
+////////////////////////////////////////////
 
 
 Ativ 9
-
-
 
 
 // Autor(a)    : Gustavo
@@ -258,7 +257,7 @@ Inicio
 
 Fimalgoritmo
 
-
+///////////////////////////////////////
 Ativ 10
 
 // Autor(a)    : Gustavo
@@ -290,7 +289,7 @@ Inicio
 
 Fimalgoritmo
 
-
+//////////////////////////////////////////
 
 Ativ 11
 
@@ -323,7 +322,7 @@ Inicio
 
 Fimalgoritmo
 
-
+///////////////////////////////////////////////
 Ativ 13
 
 // Autor(a)    : Gustavo
@@ -350,7 +349,7 @@ Inicio
 
 Fimalgoritmo
 
-
+////////////////////////////////////////
 Atividade 14
 
 
@@ -401,7 +400,7 @@ Inicio
 
 Fimalgoritmo
 
-
+///////////////////////////////////////////
 
 Atividade 15
 
