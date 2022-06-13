@@ -27,3 +27,430 @@ escreval ("A divisao deu ", divisao)
 
 Fimalgoritmo
 
+atividade 2
+Autor(a)    : Gustavo
+// Data atual  : 12/06/2022
+Var
+// Seção de Declarações das variáveis 
+n1, n2, n3, n4, p1, p2, p3, p4, mp : real
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+escreval ("Digite nota 1: ")
+leia(n1)
+escreval ("Digite peso 1: ")
+leia(p1)
+escreval ("Digite nota 2: ")
+leia(n2)
+escreval ("Digite peso 2: ")
+leia(p2)
+escreval ("Digite nota 3: ")
+leia(n3)
+escreval ("Digite peso 3: ")
+leia(p3)
+escreval ("Digite nota 4: ")
+leia(n4)
+escreval ("Digite peso 4: ")
+leia(p4)
+
+mp <- (n1*p1+n2*p2+n3*p3+n4*p4)/(p1+p2+p3+p4)
+escreval ("A média ponderada é de : ",mp)
+
+Fimalgoritmo
+
+
+ativ 4
+
+Autor(a)    : Gustavo
+// Data atual  : 12/06/2022
+
+Var
+
+
+   hora: inteiro
+   dia, tarde, noite: inteiro
+Inicio
+
+
+   escreval ("Digite hora")
+   leia (hora)
+
+   se (hora > 0) e (hora < 13) entao
+      escreval ("Bom dia")
+   senao
+      se (hora > 12) e (hora < 18) entao
+         escreval ("Boa tarde")
+      senao
+         se (hora > 17) e (hora < 25) entao
+            escreval ("Boa noite")
+         fimse
+      fimse
+   fimse
+Fimalgoritmo
+
+
+Ativ 5
+
+/ Autor(a)    : Gustavo
+// Data atual  : 06/06/2022
+
+
+Var
+   // Declarar as variáveis
+
+   nota1, nota2, nota3, nota4: real
+   total: real
+Inicio
+   // Declaração dos comandos.
+
+   escreval ("Digite as notas bimestrais: ")
+   leia (nota1)
+   leia (nota2)
+   leia (nota3)
+   leia (nota4)
+
+   se (nota1 > 10) entao
+      repita
+         escreva ("Nota do 1ª não pode ser maior que 10 ou menor que 0!")
+         leia (nota1)
+      ate (nota1 <= 10)
+   fimse
+   se (nota1 < 0) entao
+      repita
+         escreva ("Nota do 1ª não pode ser maior que 10 ou menor que 0!")
+         leia (nota1)
+      ate (nota1 >= 0)
+   fimse
+   se (nota2 > 10) entao
+      repita
+         escreva ("Nota do 2ª não pode ser maior que 10 ou menor que 0!")
+         leia (nota2)
+      ate (nota2 <= 10)
+   fimse
+   se (nota2 < 0) entao
+      repita
+         escreva ("Nota do 2ª não pode ser maior que 10 ou menor que 0!")
+         leia (nota2)
+      ate (nota2 >= 0)
+   fimse
+
+   se (nota3 > 10) entao
+      repita
+         escreva ("Nota do 3ª não pode ser maior que 10 ou menor que 0!")
+         leia (nota3)
+      ate (nota3 <= 10)
+   fimse
+   se (nota3 < 0) entao
+      repita
+         escreva ("Nota do 3ª não pode ser maior que 10 ou menor que 0!")
+         leia (nota3)
+      ate (nota3 >= 0)
+   fimse
+
+   se (nota4 > 10) entao
+      repita
+         escreva ("Nota do 4ª não pode ser maior que 10 ou menor que 0!")
+         leia (nota4)
+      ate (nota4 <= 10)
+   fimse
+   se (nota4 < 0) entao
+      repita
+         escreva ("Nota do 4ª não pode ser maior que 10 ou menor que 0!")
+         leia (nota4)
+      ate (nota4 >= 0)
+   fimse
+
+   total <- (nota1 * 2.5) + (nota2 * 2.5) + (nota3 * 3) + (nota4 * 2) /10
+
+   se (total < 5) entao
+      escreval ("Aluno reprovado com media final: ",total)
+   fimse
+
+   se (total >= 5) e (total < 9) entao
+      escreval ("Aluno aprovado com media final: ",total)
+   fimse
+
+   se (total >= 9) entao
+      escreval ("Aluno aprovado com louvor media final: ",total)
+   fimse
+
+
+Fimalgoritmo
+
+
+
+
+Ativ 7
+
+// Autor(a)    : Gustavo
+// Data atual  : 12/06/2022
+
+Var
+
+  genero, sexo: caracter
+
+Inicio
+
+
+       escreval ("Caso não queira responder digite N.")
+       escreval
+
+       repita
+       escreva ("Qual seu genero? Digite M para masculino F para feminino: ")
+       leia (genero)
+       ate (genero = "M") ou (genero = "F") ou (genero = "N")
+       escreval
+
+       escolha genero
+       caso "M"
+       sexo <- "masculino"
+       escreva ("Você digitou M para ",sexo,".")
+
+       caso "F"
+       sexo <- "feminino"
+       escreva ("Você digitou F para ",sexo,".")
+
+       caso "N"
+       sexo <- "Obrigado e volte sempre"
+       escreva (sexo)
+
+       fimescolha
+
+
+Fimalgoritmo
+
+
+
+
+Ativ 9
+
+
+
+
+// Autor(a)    : Gustavo
+// Data atual  : 12/06/2022
+
+
+Var
+
+   soma, nota, cont: real
+   N: inteiro
+   media: real
+
+Inicio
+
+
+    cont <- 0
+    soma <- 0
+    escreval ("Digite a quantidade de notas :")
+    leia (N)
+
+    para N de 0 ate N-1 faca
+    escreva ("Digite a nota do",cont+1,"ª aluno: ")
+    leia (nota)
+    cont <- cont + 1
+    soma <- soma + nota
+    fimpara
+
+    escreval
+    media <- soma / cont
+    escreval ("A média das notas é:",media:2:0)
+
+Fimalgoritmo
+
+
+Ativ 10
+
+// Autor(a)    : Gustavo
+// Data atual  : 02/06/2022
+
+Var
+
+   soma, nota, cont: real
+   N: inteiro
+   media: real
+
+Inicio
+
+    cont <- 0
+    soma <- 0
+    escreval ("Digite a quantidade de notas :")
+    leia (N)
+
+    para N de 0 ate N-1 faca
+    escreva ("Digite a nota do",cont+1,"ª aluno: ")
+    leia (nota)
+    cont <- cont + 1
+    soma <- soma + nota
+    fimpara
+
+    escreval
+    media <- soma / cont
+    escreval ("A média das notas é:",media:2:0)
+
+Fimalgoritmo
+
+
+
+Ativ 11
+
+// Autor(a)    : Gustavo
+// Data atual  : 11/06/2022
+Var
+// Abaixo as declarações das variáveis
+
+    idade: inteiro
+    cont, soma: inteiro
+Inicio
+// comandos e etc
+   cont <- 0
+   soma <- 0
+
+   escreval ("Digite idade: ")
+   leia (idade)
+
+   enquanto (idade >= 0) faca
+   cont <- cont + 1
+   soma <- soma + idade
+   escreval ("Digite idade: ")
+   leia (idade)
+   fimenquanto
+
+   escreva
+   escreval ("Você digitou",cont," idades.")
+   escreval ("A soma de todas as idades é:",soma)
+
+
+Fimalgoritmo
+
+
+Ativ 13
+
+// Autor(a)    : Gustavo
+// Data atual  : 12/06/2022
+
+
+var
+
+   num: real
+   cont: real
+
+Inicio
+
+
+   escreval ("Digite um número real qualquer que vai ser multiplicado por 0 ate 9:")
+   leia (num)
+   cont <- 0
+
+   enquanto (cont < 10) faca //enquanto a variavel cont for menor que 10 o algoritmo multiplicara o número digitado por 0 ate 9.
+   escreval (num," x" ,cont," = ",num*cont) //Codigo para mostrar na tela "5 x 0 ="
+   cont <- cont + 1
+
+   fimenquanto
+
+Fimalgoritmo
+
+
+Atividade 14
+
+
+// Autor(a)    : Gustavo
+// Data atual  : 11/06/2022
+
+Var
+
+     N, i, cont: inteiro
+     soma, media, porcentagem: real
+     nome: vetor [0..9] de caractere
+     idade: vetor [0..9] de inteiro
+
+Inicio
+
+     soma <- 0
+     cont <- 0
+
+     escreva("Quantas pessoas serão digitadas? ")
+     leia(N)
+
+      para i de 0 ate N-1 faca
+       escreval("Dados da ", i+1, "ª pessoa: ")
+         escreva("Nome: ")
+         leia(nome[i])
+         escreva("Idade: ")
+         leia(idade[i])
+      fimpara
+
+       para i de 0 ate N-1 faca
+         se (idade[i] < 20) entao
+          cont <- cont + 1
+         fimse
+       fimpara
+       escreval
+
+        porcentagem <- (cont / N) * 100
+
+        escreval("Porcentagem dos menores de 20 anos: ", porcentagem:4:2, " %")
+
+        escreval("Nome das pessoas menores de 20 anos. ")
+
+       para i de 0 ate N-1 faca
+         se (idade[i] < 20) entao
+           escreval(nome[i])
+         fimse
+       fimpara
+
+Fimalgoritmo
+
+
+
+Atividade 15
+
+// Autor(a)    : Gustavo
+// Data atual  : 13/06/2022
+Var
+
+ M, N, i, j: inteiro
+   mat : vetor [0..4, 0..4] de inteiro
+   vet : vetor [0..4] de inteiro
+
+Inicio
+   escreva ("Dijite quantas linhas vai ter a matriz?")
+   leia (M)
+
+   escreva ("Dijite quantas colunas vai ter a matriz?")
+   leia (N)
+
+   para i de 0 ate M-1 faca
+      para j de 0 ate N-1 faca
+
+         escreva ("Elemento: [",i ," , ",j,"]: ")
+         leia (mat[i,j])
+
+      fimpara
+   fimpara
+
+   escreval ("A matriz dijitada é: ")
+   escreval
+
+   para i de 0 ate M-1 faca
+      para j de 0 ate N-1 faca
+         escreva (mat[i,j])
+      fimpara
+      escreval (" ")
+   fimpara
+
+   para i de 0 ate M-1 faca
+   vet[i] <- 1
+    para j de 0 ate N-1 faca
+     vet[i] <- vet[i] * mat[i,j]
+    fimpara
+   fimpara
+
+   escreva
+   escreva ("O vetor gerado pela multiplicação da matriz é: ")
+   para i de 0 ate M-1 faca
+    escreval (vet[i])
+   fimpara
+
+
+Fimalgoritmo
